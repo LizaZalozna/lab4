@@ -5,9 +5,9 @@ namespace Lab4
 {
 	public class Care
 	{
-		private string surname;
-		private DateTime date;
-		private List<Order> orders;
+		string surname;
+		DateTime date;
+		List<Order> orders;
 	}
 }
 

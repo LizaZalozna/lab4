@@ -5,10 +5,10 @@ namespace Lab4
 	{
 		public enum TypeOfWork
 		{
-			Feeding,
-			Cleaning_the_promises,
-			Medical_examination,
-			Grazing
+            Годування,
+			Прибирання_приміщення,
+			Медогляд,
+			Випас
         }
 	}
 }
