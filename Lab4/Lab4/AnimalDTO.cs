@@ -11,7 +11,7 @@ namespace Lab4
         [RegularExpression("^[А-ЯЇІЄҐ][а-яїієґ]{2,14}$")]
         public string FirstNameOfAnimal { get; set; }
 
-        [MaxYear()]
+        [RangeYear()]
         public int YearOfBirth { get; set; }
 
         public bool GenderOfAnimal { get; set; }
