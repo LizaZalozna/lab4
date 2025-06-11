@@ -5,10 +5,10 @@ namespace Lab4
 {
 	public class AnimalDTO
 	{
-        [RegularExpression("^[А-ЯЇІЄҐ][а-яїієґ]{2,19}$")]
+        [RegularExpression("^[А-ЯЇІЄҐ][а-яїієґ]{2,14}$")]
         public string NameOfAnimal { get; set; }
 
-        [RegularExpression("^[А-ЯЇІЄҐ][а-яїієґ]{2,19}$")]
+        [RegularExpression("^[А-ЯЇІЄҐ][а-яїієґ]{2,14}$")]
         public string FirstNameOfAnimal { get; set; }
 
         [MaxYear()]

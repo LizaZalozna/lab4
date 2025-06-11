@@ -7,6 +7,11 @@ namespace Lab4
 		Animal animal;
 		int price;
 
+        public int price_
+        {
+            get { return price; }
+        }
+
         public Order(Work.TypeOfWork work, Animal animal, int price)
         {
             this.work = work;
@@ -37,4 +42,3 @@ namespace Lab4
         }
     }
 }
-
