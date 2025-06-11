@@ -40,6 +40,11 @@ namespace Lab4
             if (genderOfAnimal) return "жіноча";
             else return "чоловіча";
         }
+
+        public override string ToString()
+        {
+            return $"Назва тварини:{nameOfAnimal}, ім'я:{firstNameOfAnimal}, рік народження:{yearOfBirth}, стать:{GetGender()}.";
+        }
     }
 }
 
