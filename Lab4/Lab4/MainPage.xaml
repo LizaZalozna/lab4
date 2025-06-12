@@ -1,11 +1,20 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lab4.MainPage">
-
     <StackLayout>
         
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20" Padding="10">
+        <Button Text="Додати догляд" Clicked="OnAddCareClicked" BackgroundColor="DarkBlue" HeightRequest="50" TextColor="White" CornerRadius="10" WidthRequest="150"/>
+        <Button Text="Редагувати догляд" Clicked="OnEditCareClicked" BackgroundColor="DarkBlue" HeightRequest="50" TextColor="White" CornerRadius="10" WidthRequest="150"/>
+        <Button Text="Видалити догляд" Clicked="OnRemoveCareClicked" BackgroundColor="DarkBlue" HeightRequest="50" TextColor="White" CornerRadius="10" WidthRequest="150"/>
+        </StackLayout>
+        <Label Text="Список процедур догляду:" FontSize="Large" HorizontalOptions="Center"/>
+        <ListView x:Name="careListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Short}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </StackLayout>
-
 </ContentPage>
-

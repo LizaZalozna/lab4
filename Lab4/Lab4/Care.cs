@@ -22,7 +22,7 @@ namespace Lab4
         {
             this.surname = dto.Surname;
             this.date = dto.Date;
-            this.orders = dto.Orders;
+            this.orders = dto.Orders.Select(o => new Order(o)).ToList();
         }
 
         public CareDTO ToDTO()
@@ -31,21 +31,25 @@ namespace Lab4
             {
                 Surname = surname,
                 Date = date,
-                Orders = orders
+                Orders = orders.Select(o => o.ToDTO()).ToList()
             };
         }
 
         public override string ToString()
         {
             string ordersInfo = string.Join("\n", orders.Select(o => o.ToString()));
-            return $"Прізвище: {surname}, дата: {date.ToShortDateString()}\nЗамовлення:\n{ordersInfo}";
+            return $"Прізвище: {surname}, дата: {date.ToString("dd.MM.yyyy")}\nЗамовлення:\n{ordersInfo}";
         }
 
         public string ToShortString()
         {
             int total = orders.Sum(o => o.price_);
-            return $"Прізвище: {surname}, дата: {date.ToShortDateString()}, сума робіт: {total} грн.";
+            return $"Прізвище: {surname}, дата: {date.ToString("dd.MM.yyyy")}, сума робіт: {total} грн.";
+        }
+
+        public string Short
+        {
+            get { return ToShortString(); }
         }
     }
 }
-

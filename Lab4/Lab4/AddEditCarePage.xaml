@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab4.AddEditCarePage"
+             Title="Додати/Редагувати догляд">
+
+    <StackLayout Padding="20" Spacing="15">
+
+        <Label Text="Прізвище" FontAttributes="Bold" TextColor="White"/>
+        <Entry x:Name="surnameEntry" Placeholder="Введіть прізвище" />
+
+        <Label Text="Дата" FontAttributes="Bold" />
+        <DatePicker x:Name="careDatePicker" />
+
+        <Button Text="Закрити" BackgroundColor="DarkBlue" TextColor="White" HeightRequest="50"
+                Clicked="OnCloseClicked" CornerRadius="10" />
+
+    </StackLayout>
+
+</ContentPage>

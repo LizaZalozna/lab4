@@ -17,4 +17,3 @@ namespace Lab4
         public bool GenderOfAnimal { get; set; }
     }
 }
-

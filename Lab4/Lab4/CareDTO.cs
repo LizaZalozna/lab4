@@ -12,7 +12,6 @@ namespace Lab4
         [RangeDate()]
         public DateTime Date { get; set; }
 
-        public List<Order> Orders { get; set; }
+        public List<OrderDTO> Orders { get; set; }
     }
 }
-

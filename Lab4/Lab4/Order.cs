@@ -22,7 +22,7 @@ namespace Lab4
         public Order(OrderDTO dto)
         {
             this.work = dto.Work;
-            this.animal = dto.Animal;
+            this.animal = new Animal(dto.Animal);
             this.price = dto.Price;
         }
 
@@ -31,7 +31,7 @@ namespace Lab4
             return new OrderDTO
             {
                 Work = work,
-                Animal = animal,
+                Animal = animal.ToDTO(),
                 Price = price
             };
         }

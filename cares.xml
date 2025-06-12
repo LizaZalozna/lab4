@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCareDTO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CareDTO>
+    <Surname>Залозна</Surname>
+    <Date>2024-06-09T00:00:00</Date>
+    <Orders />
+  </CareDTO>
+  <CareDTO>
+    <Surname>Келембет</Surname>
+    <Date>2022-07-12T00:00:00</Date>
+    <Orders />
+  </CareDTO>
+  <CareDTO>
+    <Surname>Брус</Surname>
+    <Date>2005-07-06T00:00:00</Date>
+    <Orders />
+  </CareDTO>
+</ArrayOfCareDTO>

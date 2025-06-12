@@ -7,10 +7,9 @@ namespace Lab4
 	{
         public Work.TypeOfWork Work { get; set; }
 
-        public Animal Animal { get; set; }
+        public AnimalDTO Animal { get; set; }
 
         [Range(100, 1500)]
         public int Price { get; set; }
     }
 }
-

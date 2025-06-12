@@ -13,4 +13,3 @@ namespace Lab4
         }
     }
 }
-
