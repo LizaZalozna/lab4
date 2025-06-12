@@ -1,0 +1,25 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab4.ManageOrdersPage"
+             Title="Керування нарядами">
+    <StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20" Padding="10">
+            <Button Text="Додати" Clicked="OnAddOrderClicked" BackgroundColor="DarkBlue" HeightRequest="50" TextColor="White" CornerRadius="10" WidthRequest="100"/>
+            <Button Text="Редагувати" Clicked="OnEditOrderClicked" BackgroundColor="DarkBlue" HeightRequest="50" TextColor="White" CornerRadius="10" WidthRequest="100"/>
+            <Button Text="Видалити" Clicked="OnRemoveOrderClicked" BackgroundColor="DarkBlue" HeightRequest="50" TextColor="White" CornerRadius="10" WidthRequest="100"/>
+        </StackLayout>
+
+        <Label Text="Список нарядів:" FontSize="Large" HorizontalOptions="Center"/>
+        
+        <ListView x:Name="orderListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding .}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+         <Button Text="Закрити" BackgroundColor="DarkBlue" TextColor="White" HeightRequest="50"
+                Clicked="OnCloseClicked" CornerRadius="10" />
+    </StackLayout>
+</ContentPage>

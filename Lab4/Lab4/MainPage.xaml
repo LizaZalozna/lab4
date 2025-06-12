@@ -9,12 +9,12 @@
         <Button Text="Видалити догляд" Clicked="OnRemoveCareClicked" BackgroundColor="DarkBlue" HeightRequest="50" TextColor="White" CornerRadius="10" WidthRequest="150"/>
         </StackLayout>
         <Label Text="Список процедур догляду:" FontSize="Large" HorizontalOptions="Center"/>
-        <ListView x:Name="careListView">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell Text="{Binding Short}" />
-                </DataTemplate>
-            </ListView.ItemTemplate>
+        <ListView x:Name="careListView" ItemTapped="OnCareTapped">
+    <ListView.ItemTemplate>
+        <DataTemplate>
+            <TextCell Text="{Binding Short}" />
+        </DataTemplate>
+    </ListView.ItemTemplate>
         </ListView>
     </StackLayout>
 </ContentPage>

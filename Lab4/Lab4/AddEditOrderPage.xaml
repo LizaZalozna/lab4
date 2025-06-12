@@ -1,0 +1,27 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab4.AddEditOrderPage"
+             Title="Процедура">
+    <ScrollView>
+    <StackLayout Padding="20" Spacing="15">
+        
+        <Label Text="Інформація про тварину" FontAttributes="Bold" />
+        <Entry x:Name="nameOfAnimalEntry" Placeholder="Вид тварини (наприклад, Собака)" />
+        <Entry x:Name="firstNameOfAnimalEntry" Placeholder="Ім'я тварини" />
+        <Entry x:Name="yearOfBirthEntry" Placeholder="Рік народження" Keyboard="Numeric" />
+        
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+            <Label Text="Стать:" VerticalOptions="Center" />
+            <Switch x:Name="genderSwitch" HorizontalOptions="Start" />
+            <Label Text="Жіноча" VerticalOptions="Center" Margin="10,0,0,0" />
+        </StackLayout>
+
+        <Label Text="Інформація про процедуру" FontAttributes="Bold" />
+        <Picker x:Name="workPicker" Title="Оберіть тип роботи" />
+        <Entry x:Name="priceEntry" Placeholder="Ціна" Keyboard="Numeric" />
+
+        <Button Text="Закрити" BackgroundColor="DarkBlue" TextColor="White" HeightRequest="50"
+                Clicked="OnCloseClicked" CornerRadius="10" />
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

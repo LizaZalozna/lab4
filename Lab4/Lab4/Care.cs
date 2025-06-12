@@ -38,7 +38,7 @@ namespace Lab4
         public override string ToString()
         {
             string ordersInfo = string.Join("\n", orders.Select(o => o.ToString()));
-            return $"Прізвище: {surname}, дата: {date.ToString("dd.MM.yyyy")}\nЗамовлення:\n{ordersInfo}";
+            return $"Прізвище: {surname}, дата: {date.ToString("dd.MM.yyyy")}.\nДогляд:\n{ordersInfo}";
         }
 
         public string ToShortString()

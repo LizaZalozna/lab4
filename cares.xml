@@ -3,16 +3,79 @@
   <CareDTO>
     <Surname>Залозна</Surname>
     <Date>2024-06-09T00:00:00</Date>
-    <Orders />
+    <Orders>
+      <OrderDTO>
+        <Work>Медогляд</Work>
+        <Animal>
+          <NameOfAnimal>Собака</NameOfAnimal>
+          <FirstNameOfAnimal>Чарлік</FirstNameOfAnimal>
+          <YearOfBirth>2014</YearOfBirth>
+          <GenderOfAnimal>false</GenderOfAnimal>
+        </Animal>
+        <Price>900</Price>
+      </OrderDTO>
+      <OrderDTO>
+        <Work>Годування</Work>
+        <Animal>
+          <NameOfAnimal>Собака</NameOfAnimal>
+          <FirstNameOfAnimal>Чарлік</FirstNameOfAnimal>
+          <YearOfBirth>2014</YearOfBirth>
+          <GenderOfAnimal>false</GenderOfAnimal>
+        </Animal>
+        <Price>350</Price>
+      </OrderDTO>
+    </Orders>
   </CareDTO>
   <CareDTO>
     <Surname>Келембет</Surname>
     <Date>2022-07-12T00:00:00</Date>
-    <Orders />
+    <Orders>
+      <OrderDTO>
+        <Work>Випас</Work>
+        <Animal>
+          <NameOfAnimal>Кішка</NameOfAnimal>
+          <FirstNameOfAnimal>Аврора</FirstNameOfAnimal>
+          <YearOfBirth>2004</YearOfBirth>
+          <GenderOfAnimal>true</GenderOfAnimal>
+        </Animal>
+        <Price>450</Price>
+      </OrderDTO>
+      <OrderDTO>
+        <Work>Прибирання_приміщення</Work>
+        <Animal>
+          <NameOfAnimal>Пес</NameOfAnimal>
+          <FirstNameOfAnimal>Лев</FirstNameOfAnimal>
+          <YearOfBirth>2014</YearOfBirth>
+          <GenderOfAnimal>false</GenderOfAnimal>
+        </Animal>
+        <Price>350</Price>
+      </OrderDTO>
+      <OrderDTO>
+        <Work>Випас</Work>
+        <Animal>
+          <NameOfAnimal>Черепаха</NameOfAnimal>
+          <FirstNameOfAnimal>Зоя</FirstNameOfAnimal>
+          <YearOfBirth>2013</YearOfBirth>
+          <GenderOfAnimal>true</GenderOfAnimal>
+        </Animal>
+        <Price>600</Price>
+      </OrderDTO>
+    </Orders>
   </CareDTO>
   <CareDTO>
     <Surname>Брус</Surname>
     <Date>2005-07-06T00:00:00</Date>
-    <Orders />
+    <Orders>
+      <OrderDTO>
+        <Work>Годування</Work>
+        <Animal>
+          <NameOfAnimal>Кішка</NameOfAnimal>
+          <FirstNameOfAnimal>Боня</FirstNameOfAnimal>
+          <YearOfBirth>2011</YearOfBirth>
+          <GenderOfAnimal>true</GenderOfAnimal>
+        </Animal>
+        <Price>250</Price>
+      </OrderDTO>
+    </Orders>
   </CareDTO>
 </ArrayOfCareDTO>

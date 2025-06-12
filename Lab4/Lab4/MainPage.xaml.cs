@@ -63,5 +63,30 @@ namespace Lab4
             LoadCareDTOs();
             await DisplayAlert("Успішно", "Догляд видалено.", "OK");
         }
+
+        private async void OnCareTapped(object sender, ItemTappedEventArgs e)
+        {
+            if (e.Item == null)
+                return;
+
+            var selectedCare = e.Item as Care;
+
+            string action = await DisplayActionSheet(
+                $"Ви обрали догляд:\n{selectedCare.Short}",
+                "Скасувати", null,
+                "Переглянути наряди", "Обрати");
+
+            switch (action)
+            {
+                case "Переглянути наряди":
+                    Application.Current.MainPage = new NavigationPage(new ManageOrdersPage(selectedCare.ToDTO()));
+                    break;
+                case "Обрати":
+                    await DisplayAlert("Обрано", $"Ви обрали догляд:\n{selectedCare.ToString()}", "OK");
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }
